@@ -1,0 +1,51 @@
+.scimage img {
+   display: block; }
+ 
+ .scimage.imgleft, .scimage.imgright {
+   width: 300px; }
+ 
+ .scimage.imgleft {
+   float: left;
+   margin: 0 15px 15px 0; }
+ 
+ .scimage.imgright {
+   float: right;
+   margin: 0 0 15px 15px; }
+ 
+ .scimage.imgcenter, .scimage.imgfullwidth {
+   margin-bottom: 25px; }
+ 
+ .scimage.imgcenter {
+   display: flex;
+   flex-wrap: wrap;
+   width: 100%;
+   justify-content: center;
+   text-align: center; }
+   .scimage.imgcenter:before, .scimage.imgcenter:after {
+     content: " ";
+     display: table; }
+   .scimage.imgcenter:after {
+     clear: both; }
+   .scimage.imgcenter figcaption {
+     flex: 0 0 100%; }
+ 
+ .scimage.imgfullwidth:before, .scimage.imgfullwidth:after {
+   content: " ";
+   display: table; }
+ 
+ .scimage.imgfullwidth:after {
+   clear: both; }
+ 
+ .scimage.imgfullwidth img {
+   width: 100%;
+   height: auto; }
+ 
+ .scimage.hascaption {
+   border-radius: 3px;
+   padding: 5px;
+   background: #EAEAEA; }
+ 
+ .scimage figcaption {
+   font-size: 0.85em;
+   margin: 5px 2px 2px;
+   line-height: 1.1; }
